@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>NetForce</title>
+</head>
+
+<body>
+    <canvas id="matrix"></canvas>
+    <script src="./static/js/matrix.js"></script>
+    <nav>
+
+    </nav>
+    <header class="d-flex justify-content-center align-items-center" id="header">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="display-1 text-white">Net<strong>Force</strong></h1>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn bg-dark text-white border" data-toggle="modal"
+                    data-target="#exampleModal">
+                    Login
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-left">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="staticEmail"
+                                            placeholder="email@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="inputPassword">
+                                        </div>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            manter conectado
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                                <button type="button" class="btn btn-primary">Logar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="sobrenos">
+        <div class="container-fluid bg-dark text-white w-auto p-3">
+            <h1>Quem somos?</h1>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus, laboriosam aliquid dolorem
+                    optio nostrum eos reiciendis iusto at labore eligendi. Hic, quos tenetur aliquam autem dolor
+                    corrupti voluptate laudantium!</span><span>Aliquid laudantium excepturi facere distinctio eveniet
+                    vel et ea iure maxime corrupti non quibusdam tenetur minima ratione aliquam quae vitae, culpa
+                    incidunt modi suscipit exercitationem doloremque. Sint soluta perspiciatis
+                    repudiandae?</span><span>Placeat delectus modi nam blanditiis eum temporibus ea ab at. Maxime, eum
+                    blanditiis adipisci officiis accusantium reiciendis vel omnis fugiat saepe? Hic dolore consequuntur
+                    maxime illo, distinctio unde accusamus explicabo.</span><span>Aliquid debitis deserunt porro quis
+                    dolores id atque magni laudantium dolorem sit veritatis facere quas temporibus autem, officiis
+                    molestiae. Vitae illum facilis dolor ab iure sint? Eius nostrum rerum cumque.</span><span>Quia
+                    voluptas officia deleniti eum culpa ducimus, excepturi debitis harum sint dolorum aliquid sunt, non
+                    doloribus fugiat ipsum nemo temporibus laudantium facere. Repudiandae veniam molestias nemo dicta
+                    possimus eveniet voluptas.</span></p>
+            <img src="..." alt="">
+        </div>
+    </section>
+    <section id="servicos">
+        <div class="container-fluid text-center">
+            <h1 class="text-white m-4">Serviços</h1>
+            <div class="card-deck m-4">
+                <div class="card">
+                    <img height="300px" src="./static/img/hackroblox.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img height="300px" src="./static/img/aimbot.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img height="300px" src="./static/img/dinheiro infinito.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck m-4">
+                <div class="card">
+                    <img height="300px" src="./static/img/hackroblox.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img height="300px" src="./static/img/aimbot.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img height="300px" src="./static/img/dinheiro infinito.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="planos">
+        <div class="container-fluid text-center">
+            <h1 class="text-white m-4">Assinatura mesual</h1>
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Plano</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Comprar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Plano 1</th>
+                        <td>R$ 10,00</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</td>
+                        <td><button type="button" class="btn btn-primary">Comprar</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Plano 2</th>
+                        <td>R$ 20,00</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</td>
+                        <td><button type="button" class="btn btn-primary">Comprar</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Plano 3</th>
+                        <td>R$ 30,00</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</td>
+                        <td><button type="button" class="btn btn-primary">Comprar</button></td>
+                    </tr>
+                </tbody>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="./static/js/jquery.js"></script>
+    <script src="./static/js/popper.js"></script>
+    <script src="./static/js/bootstrap/bootstrap.js"></script>
+</body>
+
+</html>
