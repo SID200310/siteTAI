@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site de tai">
+    <meta name="keywords" content="tai, netforce, hack, hacker, hacking, programação, programador, programar">
+    <meta name="author" content="NetForce">
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./static/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="./static/css/style.css">
     <title>NetForce</title>
 </head>
@@ -13,22 +19,42 @@
 <body>
     <canvas id="matrix"></canvas>
     <script src="./static/js/matrix.js"></script>
-    <nav>
 
+    <nav class="navbar navbar-expand-sm fixed-top" id="main-nav">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">NetForce</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#sobrenos" class="nav-link">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#vantagens" class="nav-link">Vantagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#recem-adicionados" class="nav-link">Novos Hacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hacks" class="nav-link">Hacks</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <header class="d-flex justify-content-center align-items-center" id="header">
         <div class="container">
             <div class="text-center">
                 <h1 class="display-1 text-white">Net<strong>Force</strong></h1>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn bg-dark text-white border" data-toggle="modal"
-                    data-target="#exampleModal">
+                <button type="button" class="btn bg-dark text-white border" data-toggle="modal" data-target="#login">
                     Login
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -43,7 +69,7 @@
                                         <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="staticEmail"
-                                            placeholder="email@example.com">
+                                                placeholder="email@example.com">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -71,7 +97,7 @@
         </div>
     </header>
     <section id="sobrenos">
-        <div class="container-fluid bg-dark text-white w-auto p-3">
+        <div class="container-fluid w-auto p-5">
             <h1>Quem somos?</h1>
             <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus, laboriosam aliquid dolorem
                     optio nostrum eos reiciendis iusto at labore eligendi. Hic, quos tenetur aliquam autem dolor
@@ -89,9 +115,69 @@
             <img src="..." alt="">
         </div>
     </section>
-    <section id="servicos">
-        <div class="container-fluid text-center">
-            <h1 class="text-white m-4">Serviços</h1>
+    <section id="vantagens" class="bg-light text-white p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/share-section1.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mt-4">Share What You Create</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias
+                        laborum
+                        odit aliquid
+                        tempore perspiciatis repudiandae hic?</p>
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start">
+                            <i class="fas fa-check fa-2x"></i>
+                        </div>
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto,
+                            perspiciatis mollitia
+                            natus harum?
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start">
+                            <i class="fas fa-check fa-2x"></i>
+                        </div>
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto,
+                            perspiciatis mollitia
+                            natus harum?
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start">
+                            <i class="fas fa-check fa-2x"></i>
+                        </div>
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto,
+                            perspiciatis mollitia
+                            natus harum?
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="p-4 align-self-start">
+                            <i class="fas fa-check fa-2x"></i>
+                        </div>
+                        <div class="p-4 align-self-end">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto,
+                            perspiciatis mollitia
+                            natus harum?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section id="recem-adicionados">
+        <div class="container-fluid text-center pt-5">
+            <h1 class="text-white m-4">Novos Hacks</h1>
             <div class="card-deck m-4">
                 <div class="card">
                     <img height="300px" src="./static/img/hackroblox.png" class="card-img-top" alt="...">
@@ -158,42 +244,91 @@
             </div>
         </div>
     </section>
-    <section id="planos">
-        <div class="container-fluid text-center">
-            <h1 class="text-white m-4">Assinatura mesual</h1>
-            <table class="table table-striped table-dark">
-                <thead>
-                    <tr>
-                        <th scope="col">Plano</th>
-                        <th scope="col">Valor</th>
-                        <th scope="col">Descrição</th>
-                        <th scope="col">Comprar</th>
-                    </tr>
-                </thead>
+    <section id="hacks">
+        <div class="container-fluid mt-5 pt-5">
+            <h1 class="mb-3 text-center">Hacks de Jogos</h1>
+            <table class="table table-dark table-striped">
                 <tbody>
                     <tr>
-                        <th scope="row">Plano 1</th>
-                        <td>R$ 10,00</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</td>
-                        <td><button type="button" class="btn btn-primary">Comprar</button></td>
+                        <td>Wallhack</td>
+                        <td>Mostra as paredes, permitindo que você veja através delas.</td>
+                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">Plano 2</th>
-                        <td>R$ 20,00</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</td>
-                        <td><button type="button" class="btn btn-primary">Comprar</button></td>
+                        <td>Aimbot</td>
+                        <td>Aponta automaticamente para os jogadores inimigos.</td>
+                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
                     </tr>
                     <tr>
-                        <th scope="row">Plano 3</th>
-                        <td>R$ 30,00</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</td>
-                        <td><button type="button" class="btn btn-primary">Comprar</button></td>
+                        <td>Speedhack</td>
+                        <td>Permite que você se mova mais rapidamente do que o normal.</td>
+                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
+                    </tr>
+                    <tr>
+                        <td>ESP</td>
+                        <td>Mostra a localização de todos os jogadores inimigos.</td>
+                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
+                    </tr>
+                    <tr>
+                        <td>God Mode</td>
+                        <td>Torna você invencível, impossível de morrer.</td>
+                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Teleporte</td>
+                        <td>Permite que você se teletransporte para qualquer lugar do mapa.</td>
+                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Chams</td>
+                        <td>Torna os jogadores inimigos visíveis através de paredes.</td>
+                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bunnyhop</td>
+                        <td>Permite que você pule continuamente sem perder velocidade.</td>
+                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
                     </tr>
                 </tbody>
+            </table>
         </div>
+
     </section>
     <footer>
+        <div class="container-fluid text-center p-5">
+            <h1 class="mb-3">NetForce</h1>
+            <p class="mb-3">A NetForce é uma empresa que vende hacks para jogos online, como CS:GO, Fortnite, GTA V,
+                entre outros.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contato">
+                Entre em Contato
+            </button>
 
+            <div class="modal fade" id="contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Contatos</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-left">
+                            <p>Telefone: (xx)xxxx-xxxx</p>
+                            <p>Email: NetForce@NetForce.Net</p>
+                            <p>Instagram: @NetForce</p>
+                            <p>Facebook: NetForce</p>
+                            <p>Twitter: @NetForce</p>
+                            <p>Discord: NetForce#0000</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-3">© 2021 Copyright: NetForce</p>
+        </div>
     </footer>
     <script src="./static/js/jquery.js"></script>
     <script src="./static/js/popper.js"></script>
