@@ -8,7 +8,7 @@
     <meta name="description" content="site de tai">
     <meta name="keywords" content="tai, netforce, hack, hacker, hacking, programação, programador, programar">
     <meta name="author" content="NetForce">
-    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./static/img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./static/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -16,39 +16,51 @@
     <title>NetForce</title>
 </head>
 
-<body>
-    <canvas id="matrix"></canvas>
+<body class="bg-secondary">
+    <!--fundo do header feito em javascript-->
+    <canvas id="matrix" class="w-100 h-100"></canvas>
     <script src="./static/js/matrix.js"></script>
+    <!--fim do fundo do header-->
 
-    <nav class="navbar navbar-expand-sm fixed-top" id="main-nav">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container">
-            <a href="index.html" class="navbar-brand">NetForce</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <a class="navbar-brand" href="index.html">
+                <img src="./static/img/icon.png" width="30" height="30" class="d-inline-block align-top" alt="icone">
+                NetForce
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#sobrenos" class="nav-link">Sobre nós</a>
+                        <a class="nav-link" href="#sobrenos">Quem somos?</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#vantagens" class="nav-link">Vantagens</a>
+                        <a class="nav-link" href="#vantagens">Vantagens</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#recem-adicionados" class="nav-link">Novos Hacks</a>
+                        <a class="nav-link" href="#hacks">Hacks</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#hacks" class="nav-link">Hacks</a>
+                        <a class="nav-link" href="#comprar">Comprar</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="d-flex justify-content-center align-items-center" id="header">
-        <div class="container">
+    <!--fim da navbar-->
+
+    <!--header-->
+    <header id="header" class="container-fluid">
+        <div class="h-100 w-100 d-flex justify-content-center align-items-center">
             <div class="text-center">
-                <h1 class="display-1 text-white">Net<strong>Force</strong></h1>
-                <!-- Button trigger modal -->
+                <div class="container w-100">
+                    <p class="display-2 text-white"><img src="./static/img/icon.png" alt="icone" width="100px">Net<strong>Force</strong></p>
+                </div>
+
                 <button type="button" class="btn bg-dark text-white border" data-toggle="modal" data-target="#login">
                     Login
                 </button>
@@ -58,7 +70,7 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Login: </h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -66,14 +78,14 @@
                             <div class="modal-body text-left">
                                 <form>
                                     <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                                        <label for="staticEmail" class="col-sm-2 col-form-label">Email: </label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="staticEmail"
                                                 placeholder="email@example.com">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                        <label for="inputPassword" class="col-sm-2 col-form-label">Password: </label>
                                         <div class="col-sm-10">
                                             <input type="password" class="form-control" id="inputPassword">
                                         </div>
@@ -87,17 +99,64 @@
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
-                                <button type="button" class="btn btn-primary">Logar</button>
+                                <button type="button" class="btn btn-secondary bg-dark text-white border"
+                                    data-dismiss="modal">Voltar</button>
+                                <button type="button" class="btn btn-primary bg-dark text-white border">Logar</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--fim do modal-->
+
+                <button type="button" class="btn bg-dark text-white border" data-toggle="modal" data-target="#cadastro">
+                    Cadastre-se
+                </button>
+
+                <!-- Modal de cadastro -->
+                <div class="modal fade" id="cadastro" tabindex="-1" role="dialog" aria-labelledby="cadastroModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="cadastroModalLabel">Cadastro</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Nome:</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">E-mail:</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Senha:</label>
+                                        <input type="password" class="form-control" id="password" name="password"
+                                            required>
+                                    </div>
+                                    <button type="button" class="btn btn-secondary bg-dark text-white border"
+                                        data-dismiss="modal">Voltar</button>
+                                    <button type="submit"
+                                        class="btn btn-primary bg-dark text-white border">Cadastrar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fim do modal-->
+
             </div>
         </div>
     </header>
+    <!--fim do header-->
+
+    <!--sobre nós-->
     <section id="sobrenos">
-        <div class="container-fluid w-auto p-5">
+        <div class="container-fluid w-auto p-5 text-white">
             <h1>Quem somos?</h1>
             <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus, laboriosam aliquid dolorem
                     optio nostrum eos reiciendis iusto at labore eligendi. Hic, quos tenetur aliquam autem dolor
@@ -112,194 +171,168 @@
                     voluptas officia deleniti eum culpa ducimus, excepturi debitis harum sint dolorum aliquid sunt, non
                     doloribus fugiat ipsum nemo temporibus laudantium facere. Repudiandae veniam molestias nemo dicta
                     possimus eveniet voluptas.</span></p>
-            <img src="..." alt="">
         </div>
     </section>
-    <section id="vantagens" class="bg-light text-white p-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/share-section1.jpg" alt="" class="img-fluid mb-3 rounded-circle">
-                </div>
-                <div class="col-md-6">
-                    <h3 class="mt-4">Share What You Create</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias
-                        laborum
-                        odit aliquid
-                        tempore perspiciatis repudiandae hic?</p>
-                    <div class="d-flex">
-                        <div class="p-4 align-self-start">
-                            <i class="fas fa-check fa-2x"></i>
-                        </div>
-                        <div class="p-4 align-self-end">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto,
-                            perspiciatis mollitia
-                            natus harum?
-                        </div>
-                    </div>
+    <!--fim do sobre nós-->
 
-                    <div class="d-flex">
-                        <div class="p-4 align-self-start">
-                            <i class="fas fa-check fa-2x"></i>
-                        </div>
-                        <div class="p-4 align-self-end">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto,
-                            perspiciatis mollitia
-                            natus harum?
-                        </div>
-                    </div>
-
-                    <div class="d-flex">
-                        <div class="p-4 align-self-start">
-                            <i class="fas fa-check fa-2x"></i>
-                        </div>
-                        <div class="p-4 align-self-end">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto,
-                            perspiciatis mollitia
-                            natus harum?
-                        </div>
-                    </div>
-
-                    <div class="d-flex">
-                        <div class="p-4 align-self-start">
-                            <i class="fas fa-check fa-2x"></i>
-                        </div>
-                        <div class="p-4 align-self-end">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto,
-                            perspiciatis mollitia
-                            natus harum?
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!--vantagens-->
+    <section id="vantagens">
+        <div class="container py-5 text-white">
+            <h2 class="text-center mb-4">Vantagens</h2>
+            <ul class="list-unstyled">
+                <li class="mb-5"><i class="fas fa-check text-success mr-2"></i>Sempre ganhar as partidas online, não importa se seu pc e uma batata.</li>
+                <li class="mb-5"><i class="fas fa-check text-success mr-2"></i>Conseguir items lendarios e pagos, sem precisar farmar durante 20 anos.</li>
+                <li class="mb-5"><i class="fas fa-check text-success mr-2"></i>Ser o melhor em qualquer jogo, mesmo que você seja horrivel.</li>
+                <li class="mb-5"><i class="fas fa-check text-success mr-2"></i>Benefício 4</li>
+                <li class="mb-5"><i class="fas fa-check text-success mr-2"></i>Benefício 5</li>
+            </ul>
         </div>
     </section>
-    </section>
-    <section id="recem-adicionados">
-        <div class="container-fluid text-center pt-5">
-            <h1 class="text-white m-4">Novos Hacks</h1>
+
+    <!--fim das vantagens-->
+
+    <!--hacks-->
+    <section class="pb-5 pt-4" id="hacks">
+        <div class="container-fluid text-center">
+            <h1 class=" m-4 text-white">Novos Hacks</h1>
             <div class="card-deck m-4">
-                <div class="card">
+                <div class="card bg-dark p-1">
                     <img height="300px" src="./static/img/hackroblox.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        <h5 class="card-title text-white">Items de graça</h5>
+                        <p class="card-text text-white">This is a longer card with supporting text below as a natural
+                            lead-in to
                             additional
                             content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text text-white"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card">
-                    <img height="300px" src="./static/img/aimbot.jpg" class="card-img-top" alt="...">
+                <div class="card bg-dark p-1">
+                    <img height="300px" src="./static/img/ainmbot.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                        <h5 class="card-title text-white">Aimbot</h5>
+                        <p class="card-text text-white">This card has supporting text below as a natural lead-in to
+                            additional
                             content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text text-white"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card bg-dark p-1">
                     <img height="300px" src="./static/img/dinheiro infinito.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        <h5 class="card-title text-white">Dinheiro infinito</h5>
+                        <p class="card-text text-white">This is a wider card with supporting text below as a natural
+                            lead-in to
                             additional
                             content. This card has even longer content than the first to show that equal height action.
                         </p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text text-white"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
             </div>
             <div class="card-deck m-4">
-                <div class="card">
-                    <img height="300px" src="./static/img/hackroblox.png" class="card-img-top" alt="...">
+                <div class="card bg-dark p-1">
+                    <img height="300px" src="./static/img/godmod.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        <h5 class="card-title text-white">Godmod</h5>
+                        <p class="card-text text-white">This is a longer card with supporting text below as a natural
+                            lead-in to
                             additional
                             content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text text-white"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card">
-                    <img height="300px" src="./static/img/aimbot.jpg" class="card-img-top" alt="...">
+                <div class="card bg-dark p-1">
+                    <img height="300px" src="./static/img/vidainfinita.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                        <h5 class="card-title text-white">Vida infinita</h5>
+                        <p class="card-text text-white">This card has supporting text below as a natural lead-in to
+                            additional
                             content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text text-white"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card">
-                    <img height="300px" src="./static/img/dinheiro infinito.jpeg" class="card-img-top" alt="...">
+                <div class="card bg-dark p-1">
+                    <img height="300px" src="./static/img/caos.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        <h5 class="card-title text-white">Caos mode</h5>
+                        <p class="card-text text-white">This is a wider card with supporting text below as a natural
+                            lead-in to
                             additional
                             content. This card has even longer content than the first to show that equal height action.
                         </p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text text-white"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="hacks">
-        <div class="container-fluid mt-5 pt-5">
+    <!--fim dos hacks-->
+
+    <!--comprar-->
+    <section id="comprar">
+        <div class="container-fluid p-0 m-0 mt-3 pt-3 mb-5 pt-5 w-100">
             <h1 class="mb-3 text-center">Hacks de Jogos</h1>
-            <table class="table table-dark table-striped">
-                <tbody>
-                    <tr>
-                        <td>Wallhack</td>
-                        <td>Mostra as paredes, permitindo que você veja através delas.</td>
-                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
-                    </tr>
-                    <tr>
-                        <td>Aimbot</td>
-                        <td>Aponta automaticamente para os jogadores inimigos.</td>
-                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
-                    </tr>
-                    <tr>
-                        <td>Speedhack</td>
-                        <td>Permite que você se mova mais rapidamente do que o normal.</td>
-                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
-                    </tr>
-                    <tr>
-                        <td>ESP</td>
-                        <td>Mostra a localização de todos os jogadores inimigos.</td>
-                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
-                    </tr>
-                    <tr>
-                        <td>God Mode</td>
-                        <td>Torna você invencível, impossível de morrer.</td>
-                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
-                    </tr>
-                    <tr>
-                        <td>Teleporte</td>
-                        <td>Permite que você se teletransporte para qualquer lugar do mapa.</td>
-                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
-                    </tr>
-                    <tr>
-                        <td>Chams</td>
-                        <td>Torna os jogadores inimigos visíveis através de paredes.</td>
-                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
-                    </tr>
-                    <tr>
-                        <td>Bunnyhop</td>
-                        <td>Permite que você pule continuamente sem perder velocidade.</td>
-                        <td><a href="#" class="btn btn-primary">Comprar</a></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-respnsive w-100">
+                <table class="table table-dark w-100">
+                    <tbody>
+                        <tr>
+                            <td>Wallhack</td>
+                            <td>Mostra as paredes, permitindo que você veja através delas.</td>
+                            <td><a href="#" class="btn btn-primary bg-dark text-white border">Comprar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Aimbot</td>
+                            <td>Aponta automaticamente para os jogadores inimigos.</td>
+                            <td><a href="#" class="btn btn-primary bg-dark text-white border">Comprar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Speedhack</td>
+                            <td>Permite que você se mova mais rapidamente do que o normal.</td>
+                            <td><a href="#" class="btn btn-primary bg-dark text-white border">Comprar</a></td>
+                        </tr>
+                        <tr>
+                            <td>ESP</td>
+                            <td>Mostra a localização de todos os jogadores inimigos.</td>
+                            <td><a href="#" class="btn btn-primary bg-dark text-white border">Comprar</a></td>
+                        </tr>
+                        <tr>
+                            <td>God Mode</td>
+                            <td>Torna você invencível, impossível de morrer.</td>
+                            <td><a href="#" class="btn btn-primary bg-dark text-white border">Comprar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Teleporte</td>
+                            <td>Permite que você se teletransporte para qualquer lugar do mapa.</td>
+                            <td><a href="#" class="btn btn-primary bg-dark text-white border">Comprar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Chams</td>
+                            <td>Torna os jogadores inimigos visíveis através de paredes.</td>
+                            <td><a href="#" class="btn btn-primary bg-dark text-white border">Comprar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bunnyhop</td>
+                            <td>Permite que você pule continuamente sem perder velocidade.</td>
+                            <td><a href="#" class="btn btn-primary bg-dark text-white border">Comprar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
     </section>
-    <footer>
+    <!--fim de comprar-->
+
+    <!--contato-->
+    <footer class="bg-dark">
         <div class="container-fluid text-center p-5">
-            <h1 class="mb-3">NetForce</h1>
-            <p class="mb-3">A NetForce é uma empresa que vende hacks para jogos online, como CS:GO, Fortnite, GTA V,
+            <h1 class="mb-3 text-white">NetForce</h1>
+            <p class="mb-3 text-white">A NetForce é uma empresa que vende hacks para jogos online, como CS:GO, Fortnite,
+                GTA V,
                 entre outros.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contato">
+            <button type="button" class="btn btn-primary bg-dark text-white border" data-toggle="modal"
+                data-target="#contato">
                 Entre em Contato
             </button>
 
@@ -322,17 +355,23 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-primary bg-dark text-white border">Save
+                                changes</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <p class="mt-3">© 2021 Copyright: NetForce</p>
+            <p class="mt-3 text-white">© 2021 Copyright: NetForce</p>
         </div>
     </footer>
+    <!--fim de contato-->
+
+    <!--scripts-->
     <script src="./static/js/jquery.js"></script>
     <script src="./static/js/popper.js"></script>
     <script src="./static/js/bootstrap/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <!--fim de scripts-->
 </body>
 
 </html>

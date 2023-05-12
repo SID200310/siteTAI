@@ -5,17 +5,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #242259;
 }
-nav{
-    background-color: #124a7e;
-}
-nav a{
-    color: #1f84c9;
-}
-nav a:hover{
-    color: #20b5d8;
-}
+
 header {
     width: 100%;
     height: 100vh;
@@ -24,35 +15,33 @@ header {
 }
 
 canvas {
-    width: 100%;
-    height: 100vh;
     z-index: -2;
     position: absolute;
 }
-#vantagens{
-    background-image: url(../img/vantagens.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+#vantagens {
     width: 100%;
-    height: 100%;
+    height: 120%;
     z-index: -1;
 }
+
 i{
-    color: greenyellow;
-    background-color: black;
-    border-radius: 50%;
-    padding: 10px;
+    font-size: 30px;
 }
-ul{
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-li{
+
+li {
     list-style: none;
 }
+#hacks{
+    background-color: #131019;
+}
+
 #sobrenos{
-    background-color: #1A1840;
-    color: #4E55D9;
+    background-color: #1A1E26;
+    padding: 5%;
 }
